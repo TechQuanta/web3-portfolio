@@ -1,10 +1,17 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Home, User, Briefcase, Github, Mail, Moon, Sun } from 'lucide-react';
+// Import Next.js hooks for routing
+import { usePathname, useRouter } from 'next/navigation'; 
 import { Dock, DockIcon } from "@/components/ui/dock";
 import { FaXTwitter } from "react-icons/fa6";
+
 export function Navbar() {
   const [isDark, setIsDark] = useState(false);
+  
+  // Initialize Next.js router and pathname
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     // Initialize theme
@@ -23,11 +30,27 @@ export function Navbar() {
     }
   };
 
-  // Smooth scroll handler
+  /**
+   * Smooth scroll handler: Scrolls to the element with the given ID.
+   * @param {string} id The ID of the section to scroll to.
+   */
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  /**
+   * Special handler for the Home button.
+   */
+  const handleHomeClick = () => {
+    if (pathname === '/') {
+      // If we are already on the home page ('/'), smooth scroll to the 'home' section.
+      handleScroll('home');
+    } else {
+      // If we are on any other page, navigate back to the root ('/').
+      router.push('/');
     }
   };
 
@@ -44,12 +67,18 @@ export function Navbar() {
         "
       >
         {/* Nav Items */}
-        <DockIcon onClick={() => handleScroll('home')} title="Home">
+        <DockIcon 
+          onClick={handleHomeClick} // Use the new specialized handler
+          title="Home"
+        >
           <Home className="w-full h-full text-gray-900 dark:text-gray-100 cursor-pointer" />
         </DockIcon>
+        
+        {/* About and Projects still use smooth scroll since they are assumed to be sections on the same page */}
         <DockIcon onClick={() => handleScroll('about')} title="About">
           <User className="w-full h-full text-gray-900 dark:text-gray-100 cursor-pointer" />
         </DockIcon>
+        
         <DockIcon onClick={() => handleScroll('projects')} title="Projects">
           <Briefcase className="w-full h-full text-gray-900 dark:text-gray-100 cursor-pointer" />
         </DockIcon>
@@ -59,12 +88,13 @@ export function Navbar() {
 
         {/* Social Icons */}
         <DockIcon as="a" href="https://x.com/pratikwtfudo" target="_blank" rel="noopener noreferrer" title="Twitter">
-          <FaXTwitter className="w-5 h-6 text-gray-900 dark:text-gray-100  cursor-pointer" />
+          <FaXTwitter className="w-5 h-6 text-gray-900 dark:text-gray-100 cursor-pointer" />
         </DockIcon>
+        
         <DockIcon as="a" href="https://github.com/PratikAjbe01" target="_blank" rel="noopener noreferrer" title="GitHub">
           <Github className="w-full h-full text-gray-900 dark:text-gray-100 cursor-pointer" />
         </DockIcon>
-       
+        
 
         {/* Divider */}
         <span className="w-px h-5 bg-gray-400/30 dark:bg-gray-600/30 mx-1"></span>
