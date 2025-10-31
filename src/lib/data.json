@@ -1,0 +1,162 @@
+{
+  "profile": {
+    "githubUsername": "ashmeet07",
+    "profileImageUrl": "http://localhost:3000/_next/image?url=%2Fippo.jpeg&w=640&q=75",
+    "introduction": "I'm a passionate full-stack developer with a strong background in **blockchain technology** and software engineering. I love building scalable web applications and exploring new technologies."
+  },
+  "external": {
+    "heatmapUrlTemplate": "https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}&theme=react&hide_border=true&area=true&custom_title="
+  },
+  "skills": {
+    "techLogos": [
+      { "title": "React", "href": "https://react.dev", "icon": "SiReact" },
+      { "title": "Next.js", "href": "https://nextjs.org", "icon": "SiNextdotjs" },
+      { "title": "TypeScript", "href": "https://www.typescriptlang.org", "icon": "SiTypescript" },
+      { "title": "Tailwind CSS", "href": "https://tailwindcss.com", "icon": "SiTailwindcss" }
+    ],
+    "imageLogos": [
+      { "src": "/logos/company1.png", "alt": "Company 1", "href": "https://company1.com" },
+      { "src": "/logos/company2.png", "alt": "Company 2", "href": "https://company2.com" },
+      { "src": "/logos/company3.png", "alt": "Company 3", "href": "https://company3.com" }
+    ]
+  },
+  "mockData": {
+    "totalContributions": "1,250",
+    "workedToday": "3 hours, 15 min"
+  },
+  "timelineItems": [
+    {
+      "type": "experience",
+      "company": "Current Employer",
+      "position": "Bitcoin Protocol Engineer",
+      "date": "May 2021 - Present",
+      "location": "Remote / San Francisco, CA",
+      "description": "Led development of secure, decentralized financial primitives on the Bitcoin network.\nOptimized layer-2 transaction efficiency for faster confirmation times.\nImplemented multi-signature protocols to enhance asset security.\nDrove open-source collaboration within the Bitcoin ecosystem.",
+      "technologies": {
+        "workingOn": ["TypeScript", "Golang", "AWS"]
+      },
+      "icon": "🅐",
+      "color": "text-blue-500",
+      "socialUrl": null
+    },
+    {
+      "type": "experience",
+      "company": "Shopify",
+      "position": "Software Engineer",
+      "date": "January 2021 - April 2021",
+      "location": "Waterloo, ON",
+      "description": "Developed and maintained high-scale e-commerce platform features.\nFocused on performance optimization for core shopping cart functionality.\nIntegrated several new global payment gateways using Ruby on Rails and React.",
+      "technologies": {
+        "workedOn": ["Ruby on Rails", "React", "GraphQL", "PostgreSQL"]
+      },
+      "icon": "🛍",
+      "color": "text-green-500",
+      "socialUrl": "https://shopify.com"
+    },
+    {
+      "type": "experience",
+      "company": "Nvidia",
+      "position": "Software Engineer",
+      "date": "January 2020 - April 2020",
+      "location": "Santa Clara, CA",
+      "description": "Contributed to the CUDA platform, optimizing kernel performance.\nDeveloped testing frameworks for parallel processing systems in C++.\nImplemented data visualization tools for internal GPU usage metrics.",
+      "technologies": {
+        "workedOn": ["CUDA", "C++", "Python", "Linux"]
+      },
+      "icon": "🎮",
+      "color": "text-gray-700",
+      "socialUrl": "https://nvidia.com"
+    },
+    {
+      "type": "education",
+      "institution": "Buildspace",
+      "degree": "s3, s4, sf1, s5",
+      "date": "2023 - 2024",
+      "location": "Online",
+      "description": "Intensive coding bootcamp focused on full-stack development and startup skills.",
+      "icon": "🏗"
+    },
+    {
+      "type": "education",
+      "institution": "University of Waterloo",
+      "degree": "Bachelor's Degree of Computer Science (BCS)",
+      "date": "2016 - 2021",
+      "location": "Waterloo, ON",
+      "description": "Comprehensive computer science education with focus on software engineering and algorithms.",
+      "icon": "🎓"
+    }
+  ],
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name_and_title": "Pratik — A Full Stack Developer.",
+    "description": "I build interactive web apps using [TECH_LIST]. With a focus on **UI** design. Enthusiastic about **SAAS**, driven by a keen eye for building product.",
+    "technologies": [
+      { "name": "TypeScript", "icon_name": "TypeScriptIcon" },
+      { "name": "React", "icon_name": "ReactIcon" },
+      { "name": "Next.js", "icon_name": "NextJSIcon" },
+      { "name": "PostgreSQL", "icon_name": "PostgreSQlIcon" }
+    ],
+    "image_card": {
+      "src": "/ippo.jpeg",
+      "alt": "Profile photo",
+      "height": 250,
+      "width": 250,
+      "electric_border": {
+        "color": "#7df9ff",
+        "speed": 1,
+        "chaos": 0.5,
+        "thickness": 2
+      }
+    },
+    "call_to_actions": [
+      { "label": "Download CV", "icon_name": "Download", "link": "/path/to/cv.pdf" },
+      { "label": "Connect", "icon_name": "RocketIcon", "link": "#contact" }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Chat Collect",
+      "description": "A SaaS to collect email addresses from your GPT users via the OpenAI GPT Store. Great for building an audience and monetizing API usage.",
+      "image": "/project1.jpg",
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe"],
+      "status": "Operational",
+      "detailsUrl": "#"
+    },
+    {
+      "id": 2,
+      "title": "Magic UI",
+      "description": "Designed, developed and sold animated UI components for developers, focusing on modern web aesthetics and performance.",
+      "image": "/project2.jpg",
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
+      "status": "Under Development",
+      "detailsUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "AI Content Generator",
+      "description": "A powerful SaaS application that uses AI to generate content for various use cases. Built with modern tech stack and optimized for performance.",
+      "image": "/project3.jpg",
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "technologies": ["Next.js", "TypeScript"],
+      "status": "Archived",
+      "detailsUrl": "#"
+    },
+    {
+      "id": 4,
+      "title": "Design System",
+      "description": "Comprehensive design system with reusable components and documentation. Helping teams maintain design consistency across projects.",
+      "image": "/project4.jpg",
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "technologies": ["Storybook", "React", "TypeScript"],
+      "status": "Operational",
+      "detailsUrl": "#"
+    }
+  ]
+}
